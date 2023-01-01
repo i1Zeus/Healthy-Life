@@ -3,20 +3,20 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use Livewire\WithFileUploads;
+// use Livewire\WithFileUploads;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use App\Models\Book;
 
 class AddBook extends Component
 {   
-    // use LivewireAlert;
-    use WithFileUploads;
-    public $name , $description ,$photo;
+    use LivewireAlert;
+    // use WithFileUploads;
+    public $name , $description;
     protected $rules = [
         'name'  => 'required',
         'description' => 'required'
     ];
-    public function add(Book $car)
+    public function save(Book $book)
         {
             $this->validate();
             $data = [
@@ -28,15 +28,16 @@ class AddBook extends Component
             // if ($this->image_path){
             //     $car->add_image($this->image_path);}
             $this->reset();
-            // $this->alert('success', 'تم اضافة الكتاب بنجاح  ', [
-            //         'position' => 'center',
-            //         'timer' => 3000,
-            //         'toast' => true,
-            //     ]);
+            $this->alert('success', 'تم اضافة الكتاب بنجاح  ', [
+                    'position' => 'center',
+                    'timer' => 3000,
+                    'toast' => true,
+                ]);
         }
     
     public function render()
     {
+
         return view('livewire.add-book');
     }
 }
