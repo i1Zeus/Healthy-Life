@@ -9,4 +9,11 @@ class Book extends Model
 {
     use HasFactory;
     protected $fillable = [ 'name' , 'description' ,'photo'];
+    ### add ###
+    public function add($data)
+    {
+        $this->fill($data);
+        $this->save();
+    }
+    ### End add ###
 }
