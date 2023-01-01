@@ -17,7 +17,7 @@
                             delete
                             <!-- <i class="fa-solid fa-trash text-gray-600  hover:text-red-700 "></i> -->
                         </button>
-                        <a href="{{ route('edit-book', ['book_id' => $book->id]) }}" class="btn ">
+                        <a href="{{route('edit-book', ['book_id' => $book->id]) }}" class="btn ">
                             edit </a>
 
                     </div>

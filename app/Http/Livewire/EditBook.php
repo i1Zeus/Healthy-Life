@@ -18,17 +18,16 @@ class EditBook extends Component
         'description' => 'required'
     ];
 
-    // public function mount($book_id)
-    // {
-    //     $this->book_id = $book_id;
-    //     if ($book_id) {
-    //         $book = Book::findOrFail($book_id);
-    //         $this->name = $book->name;
-    //         $this->description = $book->description;
-    //         $this->image_path = $book->image_path;
-    //     }
-    // }
-
+    public function mount($book_id)
+    {   
+        $this->book_id = $book_id;
+        if ($book_id) {
+            $book = Book::findOrFail($book_id);
+            $this->name = $book->name;
+            $this->description = $book->description;
+            $this->image_path = $book->image_path;
+        }
+    }
     public function edit()
     {
         $this->validate();
@@ -43,8 +42,9 @@ class EditBook extends Component
         
         if ($this->new_image) {
             $book->update_image($this->new_image);
+            dd('new image');
         }
-        $this->alert('success', 'Done!', [
+        $this->alert('success', 'Done', [
             'position' => 'center',
             'timer' => 3000,
             'toast' => true,
@@ -52,40 +52,6 @@ class EditBook extends Component
         $this->emitUp('$refresh');
         $this->emitTo('book-show', '$refresh');
     }
-    // public function mount($book_id)
-    // {
-    //     $this->book_id = $book_id;
-    //     if ($book_id) {
-    //         $book = Book::findOrFail($book_id);
-    //         $this->name = $book->name;
-    //         $this->description = $book->description;
-    //         $this->image_path = $book->image_path;
-    //     }
-    // }
-    // public function edit()
-    // {
-    //     $this->validate();
-        
-    //     $data = [
-    //         'name' => $this->name,
-    //         'description' => $this->description,
-    //     ];
-        
-    //     $book = Book::findOrFail($this->book_id);
-    //     dd('hh');
-    //     $book->edit($data);
-        
-    //     // if ($this->new_image) {
-    //     //     $book->update_image($this->new_image);
-    //     // }
-
-    //     $this->alert('success', 'Done', [
-    //         'position' => 'center',
-    //         'timer' => 3000,
-    //         'toast' => true,
-    //     ]);
-    //     $this->emitUp('$refresh');
-    // }
     public function render()
     {
         return view('livewire.edit-book');
