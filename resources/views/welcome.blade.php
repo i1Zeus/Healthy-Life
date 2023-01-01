@@ -14,8 +14,8 @@
 
 
     <!-- font link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/
-        11.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/11.min.css">
+
 
     <!-- css link -->
     <link rel="stylesheet" href="/css/main.css">
@@ -23,6 +23,8 @@
     <!-- icon link -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="icon" type="image/png" href="img/logo.svg">
 
 </head>
 
