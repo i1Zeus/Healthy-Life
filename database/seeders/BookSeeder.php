@@ -19,7 +19,7 @@ class BookSeeder extends Seeder
         Book::Create([
             'name'=> 'jj',
             'description' =>'jj',
-            'photo'=> 'jj'
+            'image_path'=> 'jj'
         ]);
     }
 }

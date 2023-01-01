@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     use HasFactory;
-    protected $fillable = [ 'name' , 'description' ,'photo'];
+    protected $fillable = [ 'name' , 'description' ,'image_path'];
     ### add ###
     public function add($data)
     {
@@ -16,4 +16,24 @@ class Book extends Model
         $this->save();
     }
     ### End add ###
+    //add_image
+    public function add_image($image)
+    {
+        $ext = $image->extension();
+        $name =  \Str::random(10) . '.' . $ext;
+        $image = $image->storeAs('public/books/' . $this->id . '/images/', $name);
+        $this->image_path = 'storage/books/' . $this->id . '/images/' . $name;
+        $this->save();
+    }
+
+    //update_image
+    public function update_image($image)
+    {
+        $ext = $image->extension();
+        $name =  \Str::random(10) . '.' . $ext;
+        $image = $image->storeAs('public/books/' . $this->id . '/images/', $name);
+        $this->image_path = 'storage/books/' . $this->id . '/images/' . $name;
+        $this->save();
+    }
+
 }
