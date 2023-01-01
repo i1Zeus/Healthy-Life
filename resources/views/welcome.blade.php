@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <link rel="icon" type="image/png" href="img/logo.svg">
+    <link rel="icon" type="image/png" href="/img/logo.svg">
+    @vite('resources/css/app.css')
 
 </head>
 
@@ -74,12 +75,13 @@
                     <img src="/img/food.png" alt="food" />
                 </div>
                 <div class="content">
-                    <h3>Healthy meals</h3>
+                    <h3>Healthy Meals</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                        similique veritatis. Iusto fuga culpa dolores? Dicta saepe soluta
-                        aperiam cum deleniti accusantium adipisci, officiis itaque sunt
-                        aspernatur debitis, quod eum.
+                        Healthy meals are an important part of maintaining good physical and mental health. They involve
+                        choosing a variety of whole, unprocessed foods, including plenty of vegetables, lean sources of
+                        protein, and limiting sugary drinks and snacks. Planning meals in advance can make it easier to
+                        stick to a healthy diet. Eating healthy meals can help you feel your best, have more energy, and
+                        reduce your risk of chronic diseases such as obesity, type 2 diabetes, and heart disease.
                     </p>
                     <a href="#" class="btn">
                         learn more <span class="fas fa-chevron-right"></span>
@@ -92,12 +94,13 @@
                     <img src="/img/Eating food 2.png" alt="Eating food" />
                 </div>
                 <div class="content">
-                    <h3>diet</h3>
+                    <h3>Diet</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                        similique veritatis. Iusto fuga culpa dolores? Dicta saepe soluta
-                        aperiam cum deleniti accusantium adipisci, officiis itaque sunt
-                        aspernatur debitis, quod eum.
+                        A healthy diet is an important part of maintaining good physical and mental health. It involves
+                        choosing a variety of whole, unprocessed foods, including plenty of vegetables, lean sources of
+                        protein, and limiting sugary drinks and snacks. Planning meals in advance can make it easier to
+                        stick to a healthy diet. Eating a healthy diet can help you feel your best, have more energy,
+                        and reduce your risk of chronic diseases such as obesity, type 2 diabetes, and heart disease.
                     </p>
                     <a href="#" class="btn">
                         learn more <span class="fas fa-chevron-right"></span>
@@ -110,12 +113,14 @@
                     <img src="/img/gym 2.png" alt="gym" />
                 </div>
                 <div class="content">
-                    <h3>sport machines</h3>
+                    <h3>Sport Machines</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                        similique veritatis. Iusto fuga culpa dolores? Dicta saepe soluta
-                        aperiam cum deleniti accusantium adipisci, officiis itaque sunt
-                        aspernatur debitis, quod eum.
+                        Sports machines are specialized equipment used to improve physical fitness, sports performance,
+                        and rehabilitation. Examples of sports machines include treadmills, stationary bikes, weight
+                        machines, and ellipticals. These machines can be found at gyms, physical therapy clinics. Using
+                        sports machines can help to improve cardiovascular endurance,
+                        muscle strength, and flexibility. It is important to use proper form and technique to avoid
+                        injury and get benefit from your workouts.
                     </p>
                     <a href="#" class="btn">
                         learn more <span class="fas fa-chevron-right"></span>
@@ -158,10 +163,9 @@
                 <div class="content">
                     <h3>Medical Advice</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                        similique veritatis. Iusto fuga culpa dolores? Dicta saepe soluta
-                        aperiam cum deleniti accusantium adipisci, officiis itaque sunt
-                        aspernatur debitis, quod eum.
+                        Medical advice is information or recommendations provided by a healthcare professional, such as
+                        a doctor, nurse, or pharmacist, about how to manage or improve one's health.
+                        <br><br>
                     </p>
                     <a href="#" class="btn">
                         learn more <span class="fas fa-chevron-right"></span>
@@ -171,15 +175,14 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="/img/body.png" alt="body" />
+                    <img src="/img/body.png" alt="body care" />
                 </div>
                 <div class="content">
                     <h3>body care</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                        similique veritatis. Iusto fuga culpa dolores? Dicta saepe soluta
-                        aperiam cum deleniti accusantium adipisci, officiis itaque sunt
-                        aspernatur debitis, quod eum.
+                        Body care involves taking care of your physical body through proper nutrition, exercise, and
+                        hygiene. This includes eating a healthy diet, staying hydrated, getting regular physical
+                        activity, and maintaining good personal hygiene practices such as bathing.
                     </p>
                     <a href="#" class="btn">
                         learn more <span class="fas fa-chevron-right"></span>
@@ -194,10 +197,9 @@
                 <div class="content">
                     <h3>Articles</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                        similique veritatis. Iusto fuga culpa dolores? Dicta saepe soluta
-                        aperiam cum deleniti accusantium adipisci, officiis itaque sunt
-                        aspernatur debitis, quod eum.
+                        Articles are written pieces of content that provide information, analysis, or opinions on a
+                        particular topic. They can be found in newspapers, magazines, online publications, and other
+                        media.<br><br>
                     </p>
                     <a href="#" class="btn">
                         learn more <span class="fas fa-chevron-right"></span>
