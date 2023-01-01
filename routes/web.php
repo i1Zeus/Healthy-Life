@@ -14,7 +14,7 @@ use App\Http\Livewire\AddBook;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('livewire.pages.home');
 });
 
 Route::get('/add-book', AddBook::class)->name('add-book');
