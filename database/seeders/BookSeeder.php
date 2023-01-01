@@ -15,11 +15,11 @@ class BookSeeder extends Seeder
      */
     public function run()
     {
-        //
+        //1
         Book::Create([
-            'name'=> 'jj',
-            'description' =>'jj',
-            'image_path'=> 'jj'
+            'name'=> 'Book Name 1',
+            'description' =>'Book Description 1',
+            'image_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg'
         ]);
     }
 }
