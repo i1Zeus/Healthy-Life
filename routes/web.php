@@ -18,3 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/add-book', AddBook::class)->name('add-book');
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
