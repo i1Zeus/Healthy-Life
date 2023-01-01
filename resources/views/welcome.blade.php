@@ -25,6 +25,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="icon" type="image/png" href="/img/logo.svg">
+    @vite('resources/css/app.css')
 
 </head>
 
@@ -46,9 +47,6 @@
 
     <!-- home section starts -->
     <section class="home" id="home">
-        <div class="w-full bg-black text-5xl">
-            sdfvb
-        </div>
         <div class="image">
             <img src="/img/Healthy lifestyle-bro.png" alt="Healthy lifestyle" />
         </div>
@@ -177,7 +175,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="/img/body.png" alt="body" />
+                    <img src="/img/body.png" alt="body care" />
                 </div>
                 <div class="content">
                     <h3>body care</h3>
