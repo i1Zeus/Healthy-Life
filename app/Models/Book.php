@@ -16,6 +16,13 @@ class Book extends Model
         $this->save();
     }
     ### End add ###
+    ### edit ###
+    public function edit($data)
+    {
+        $this->update($data);
+    }
+    ### End edit ###
+    
     //add_image
     public function add_image($image)
     {
