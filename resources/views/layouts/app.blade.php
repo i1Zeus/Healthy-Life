@@ -35,7 +35,7 @@
 
         <!-- Page Content -->
         <main>
-            {{-- <livewire:navbar /> --}}
+            <livewire:ui.navbar />
             {{ $slot }}
         </main>
     </div>
