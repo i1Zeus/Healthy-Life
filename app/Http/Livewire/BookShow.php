@@ -43,6 +43,12 @@ class BookShow extends Component
             'onDismissed' => '',
         ]);
     }
+
+    public function download($id)
+    {
+        $book = Book::findOrFail($id);
+        return response()->download(public_path($book->file_path));
+    }
     public function search($search)
     {
         $this->search = $search;

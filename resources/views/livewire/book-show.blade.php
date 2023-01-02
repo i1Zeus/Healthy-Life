@@ -24,7 +24,8 @@
                         {{ $book->description }}
                     </p>
                     <div class="flex gap-2 flex-cols-2">
-                        <button wire:click="confirm({{ $book->id }})" class="btn ">
+                        <button wire:click="download({{ $book->id }})"
+                         class="btn ">
                             Download
                             <!-- <i class="text-gray-600 fa-solid fa-trash hover:text-red-700 "></i> -->
                         </button>

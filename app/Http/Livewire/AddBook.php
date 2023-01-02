@@ -11,7 +11,7 @@ class AddBook extends Component
 {   
     use LivewireAlert;
     use WithFileUploads;
-    public $name , $description , $image_path;
+    public $name , $description , $image_path , $file_path;
     protected $rules = [
         'name'  => 'required',
         'description' => 'required'
@@ -25,6 +25,8 @@ class AddBook extends Component
             ];
             $book = new Book();
             $book->add($data);
+            if ($this->file_path)
+                $book->add_file($this->file_path); 
             if ($this->image_path){
                 $book->add_image($this->image_path);}
             $this->reset();

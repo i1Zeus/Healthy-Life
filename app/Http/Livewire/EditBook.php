@@ -12,7 +12,7 @@ class EditBook extends Component
 {
     use LivewireAlert;
     use WithFileUploads;
-    public $name, $description, $image_path, $book_id, $new_image;
+    public $name, $description, $image_path, $book_id, $new_image, $new_file;
     protected $rules = [
         'name'  => 'required',
         'description' => 'required'
@@ -39,7 +39,9 @@ class EditBook extends Component
         
         $book = Book::findOrFail($this->book_id);
         $book->edit($data);
-        
+        if ($this->new_file){
+            $book->update_file($this->new_file); 
+        }
         if ($this->new_image) {
             $book->update_image($this->new_image);
             dd('new image');
