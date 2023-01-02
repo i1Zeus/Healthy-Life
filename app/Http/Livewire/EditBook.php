@@ -12,7 +12,7 @@ class EditBook extends Component
 {
     use LivewireAlert;
     use WithFileUploads;
-    public $name, $description, $image_path, $book_id, $new_image, $new_file;
+    public $name, $description, $image_path, $book_id, $new_image, $new_file, $file_path;
     protected $rules = [
         'name'  => 'required',
         'description' => 'required'
@@ -26,6 +26,7 @@ class EditBook extends Component
             $this->name = $book->name;
             $this->description = $book->description;
             $this->image_path = $book->image_path;
+            $this->file_path = $book->file_path;
         }
     }
     public function edit()
@@ -44,7 +45,6 @@ class EditBook extends Component
         }
         if ($this->new_image) {
             $book->update_image($this->new_image);
-            dd('new image');
         }
         $this->alert('success', 'Done', [
             'position' => 'center',
