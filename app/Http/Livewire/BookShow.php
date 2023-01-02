@@ -5,12 +5,16 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Book;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
+use Livewire\WithPagination;
 
 class BookShow extends Component
 {   
+    
     use LivewireAlert;
-    protected $listeners = [ '$refresh','delete'];
-    public $books ,$book_id ;
+    use WithPagination;
+
+    protected $listeners = [ '$refresh','delete','search'];
+    public $book_id, $search ;
 
     public function delete()
     {
@@ -39,9 +43,15 @@ class BookShow extends Component
             'onDismissed' => '',
         ]);
     }
-    public function render()
+    public function search($search)
     {
-        $this->books = Book::all();
-        return view('livewire.book-show' );
+        $this->search = $search;
+    }
+    public function render()
+    {   $search = '%' . $this->search . '%';
+        $books = Book::where('name', 'LIKE', $search)
+        ->orderBy('id', 'DESC');
+         $books = $books->paginate(5);
+        return view('livewire.book-show' , compact('books'));
     }
 }
