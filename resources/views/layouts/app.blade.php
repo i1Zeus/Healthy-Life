@@ -42,7 +42,9 @@
         <!-- Page Content -->
         <main>
             <livewire:ui.navbar />
-            {{ $slot }}
+            <div class="mt-[50px]">
+                {{ $slot }}
+            </div>
         </main>
     </div>
 

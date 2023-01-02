@@ -18,11 +18,12 @@ use App\Http\Livewire\BookShow;
 
 Route::get('/', function () {
     return view('livewire.pages.home');
-});
+})->name('home');
 
 Route::get('/add-book', AddBook::class)->name('add-book');
 Route::get('/edit-book/{book_id}', EditBook::class)->name('edit-book');
 Route::get('/book-show', BookShow::class)->name('book-show');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

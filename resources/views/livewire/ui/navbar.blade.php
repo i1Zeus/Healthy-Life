@@ -1,13 +1,25 @@
 <div class="text">
-    <header class="header" >
+    <header class="header">
         <a href="#" class="logo">
             <i class="fas fa-heartbeat"></i> Healthy life
         </a>
         <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#sections">sections</a>
-            <a href="#library">library</a>
-            <a href="#services">services</a>
+            <a href="{{ route('home') }}">
+                <span class="{{ request()->is('/') ? 'text-[#16a085]' : '' }}">Home
+                </span>
+            </a>
+            <a href="#sections">
+                <span class="{{ request()->is('#services') ? 'text-[#16a085]' : '' }}">Sections
+                </span>
+            </a>
+            <a href="{{ route('book-show') }}">
+                <span class="{{ request()->is('book-show') ? 'text-[#16a085]' : '' }}">Library
+                </span>
+            </a>
+            <a href="#services">
+                <span class="{{ request()->is('#services') ? 'text-[#16a085]' : '' }}">Services
+                </span>
+            </a>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
     </header>
