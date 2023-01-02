@@ -1,8 +1,8 @@
-<div class=" ">
+<div class="">
     <div class="relative">
         <input wire:model="search" placeholder=""
-            class="px-16 py-4 w-full rounded-md border border-gray-900 focus:border-blue-500 focus:bg-white focus:ring-1.5 text-lg">
-        <div class="absolute left-4 top-0 flex items-center mr-2 h-full">
+            class="px-16 py-4 w-full rounded-md border border-gray-900 focus:border-[#16a085] focus:bg-white focus:ring-1.5 text-lg">
+        <div class="absolute top-0 flex items-center h-full mr-2 left-4">
             <svg aria-hidden="true" class="w-5 h-5 text-black " fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

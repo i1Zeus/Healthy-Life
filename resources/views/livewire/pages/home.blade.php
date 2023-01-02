@@ -41,7 +41,7 @@
                             and
                             reduce your risk of chronic diseases such as obesity, type 2 diabetes, and heart disease.
                         </p>
-                        <a href="#" class="btn">
+                        <a href="{{ route('healthy-meals') }}" class="btn">
                             learn more <span class="fas fa-chevron-right"></span>
                         </a>
                     </div>
@@ -109,7 +109,7 @@
                 <div class="content">
                     <h3>Read and learn through our library</h3>
                     <p>You can get free books in the field of healthy life</p>
-                    <a href="{{ route('book-show') }}" class="btn" >
+                    <a href="{{ route('book-show') }}" class="btn">
                         read more <span class="fas fa-chevron-right"></span>
                     </a>
                 </div>

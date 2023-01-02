@@ -1,45 +1,47 @@
 {{-- <x-app-layout> --}}
 <div class="mt-[100px]">
-    <div class="flex  justify-center">
+    {{-- ? search & Add button --}}
+    <div class="flex justify-center gap-1">
         <livewire:ui.search />
-        <div class="svg-wrapper">
+        <div class="flex justify-center svg-wrapper">
             <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
                 <rect id="shape" height="40" width="150" />
                 <div id="text">
-                    <a href="{{ route('add-book') }}"><span class="spot"></span><i class="fa-solid fa-plus"></i>     ADD BOOK</a>
+                    <a href="{{ route('add-book') }}"><span class="spot"></span><i class="fa-solid fa-plus"></i> ADD
+                        BOOK</a>
                 </div>
             </svg>
         </div>
     </div>
+    {{-- ? Books --}}
     <section class="icos" id="sections">
-        <div class="box-container ">
+        <div class="box-container">
             @forelse ($books as $book)
-            <div class="box">
-                <div class="image h-96 ">
-                    <img src="{{ asset($book->image_path ?? 'img/Library-amico.png') }}" class="">
-                </div>
-                <div class="content">
-                    <h3 class="truncate">{{ $book->name }}</h3>
-                    <p class="h-[90px] overflow-hidden">
-                        {{ $book->description }}
-                    </p>
-                    <div class="flex gap-2 flex-cols-2">
-                        <button wire:click="download({{ $book->id }})"
-                         class="btn ">
-                            Download
-                            <!-- <i class="text-gray-600 fa-solid fa-trash hover:text-red-700 "></i> -->
-                        </button>
-                        <button wire:click="confirm({{ $book->id }})" class="btn ">
-                            Delete
-                            <!-- <i class="text-gray-600 fa-solid fa-trash hover:text-red-700 "></i> -->
-                        </button>
-                        <a href="{{ route('edit-book', ['book_id' => $book->id]) }}" class="btn ">
-                            Edit </a>
+                <div class="box !w-[305px]">
+                    <div class="image !h-[380px] !w-[263px]">
+                        <img src="{{ asset($book->image_path ?? 'img/Library-amico.png') }}" class="">
+                    </div>
+                    <div class="content">
+                        <h3 class="truncate">{{ $book->name }}</h3>
+                        <p class="h-[90px] overflow-hidden">
+                            {{ $book->description }}
+                        </p>
+                        <div class="flex gap-2 flex-cols-2">
+                            <button wire:click="download({{ $book->id }})" class="btn ">
+                                Download
+                                <!-- <i class="text-gray-600 fa-solid fa-trash hover:text-red-700 "></i> -->
+                            </button>
+                            <button wire:click="confirm({{ $book->id }})" class="btn ">
+                                Delete
+                                <!-- <i class="text-gray-600 fa-solid fa-trash hover:text-red-700 "></i> -->
+                            </button>
+                            <a href="{{ route('edit-book', ['book_id' => $book->id]) }}" class="btn ">
+                                Edit </a>
+                        </div>
                     </div>
                 </div>
-            </div>
             @empty
-            <span class="mt-[100px] text-3xl font-bold "> No books found</span>
+                <span class="mt-[100px] text-3xl font-bold "> No books found</span>
             @endforelse
 
         </div>
@@ -69,7 +71,7 @@
     #shape {
         stroke-width: 6px;
         fill: transparent;
-        stroke: #009FFD;
+        stroke: #16a085;
         stroke-dasharray: 85 400;
         stroke-dashoffset: -220;
         transition: 1s all ease;

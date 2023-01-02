@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\AddBook;
 use App\Http\Livewire\EditBook;
 use App\Http\Livewire\BookShow;
+use App\Http\Livewire\HealthForm;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ Route::get('/', function () {
 Route::get('/add-book', AddBook::class)->name('add-book');
 Route::get('/edit-book/{book_id}', EditBook::class)->name('edit-book');
 Route::get('/book-show', BookShow::class)->name('book-show');
+Route::get('/healthy-meals', HealthForm::class)->name('healthy-meals');
 
 Route::middleware([
     'auth:sanctum',

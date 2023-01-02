@@ -1,7 +1,7 @@
 <div class="text">
     <header class="header">
-        <a href="#" class="logo">
-            <i class="fas fa-heartbeat"></i> Healthy life
+        <a href="{{ route('home') }}" class="logo">
+            <i class="fas fa-heartbeat !text-[#16a085]"></i> Healthy life
         </a>
         <nav class="navbar">
             <a href="{{ route('home') }}">
