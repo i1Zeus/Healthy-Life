@@ -31,19 +31,18 @@
                         class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-focus:dark:text-greenborder-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Age</label>
                 </div>
                 <div>
-                    <label for="activity">Activity level:</label><br>
-                    <input wire:model.lazy="activity-level" type="radio" id="sedentary" name="activity"
-                        value="1">
+                    <label>Activity level:</label><br>
+                    <input wire:model.lazy="activityLevel" type="radio" id="sedentary" value="1">
                     <label for="sedentary">sedentary</label><br>
-                    <input wire:model.lazy="activity-level" type="radio" id="activity" name="activity"
-                        value="2">
-                    <label for="activity">lightly active</label><br>
-                    <input wire:model.lazy="activity-level" type="radio" id="activity" name="activity"
-                        value="3">
-                    <label for="activity">moderately active</label><br>
-                    <input wire:model.lazy="activity-level" type="radio" id="activity" name="activity"
-                        value="4">
-                    <label for="activity">very active</label><br>
+
+                    <input wire:model.lazy="activityLevel" type="radio" id="active" value="2">
+                    <label for="active">lightly active</label><br>
+
+                    <input wire:model.lazy="activityLevel" type="radio" id="moderately" value="3">
+                    <label for="moderately">moderately active</label><br>
+                    
+                    <input wire:model.lazy="activityLevel" type="radio" id="very" value="4">
+                    <label for="very">very active</label><br>
                 </div>
             </div>
 
