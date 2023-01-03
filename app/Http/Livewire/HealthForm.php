@@ -13,7 +13,6 @@ class HealthForm extends Component
 
         if ($this->activityLevel == '1') {
             $this->bmr = $this->bmr * 1.2;
-            
           } else if ($this->activityLevel == '2') {
             $this->bmr=$this->bmr * 1.375;
           } else if ($this->activityLevel == '3') {
@@ -24,11 +23,11 @@ class HealthForm extends Component
             // throw an error or return a default value
           }
         $this->bmr = intval($this->bmr);
-        $this->hight = '';
-        $this->weight = '';
-        $this->age = '';
-        $this->gender = '';
-        $this->activityLevel = '';
+        $this->hight = null;
+        $this->weight = null;
+        $this->age = null;
+        $this->gender = null;
+        $this->activityLevel = null;
     }
 
     public function render()
