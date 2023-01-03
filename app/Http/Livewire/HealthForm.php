@@ -7,9 +7,11 @@ class HealthForm extends Component
     public $hight , $weight , $age ,$gender  ,$activityLevel , $bmr;
     public function harrisbenedict() {
         if ($this->gender == '1') 
-            $this->bmr = 66 + (6.2 * $this->weight) + (12.7 * $this->hight) - (6.76 * $this->age);
+            $this->bmr = 66 + (6.2 * ($this->weight/0.45359237)) + (12.7 * $this->hight) - (6.76 * $this->age);
         else 
-            $this->bmr = 655 + (4.35 * $this->weight) + (4.7 * $this->weight) - (4.7 * $this->weight);
+            $this->bmr = 655 + (4.35 * ($this->weight/0.45359237)) + (4.7 * $this->hight) - (4.7 * $this->age);
+    
+
         $this->hight = '';
         $this->weight = '';
         $this->age = '';
