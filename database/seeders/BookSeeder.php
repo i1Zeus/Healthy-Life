@@ -20,35 +20,31 @@ class BookSeeder extends Seeder
             'name'=> 'Book Name 1',
             'description' =>'Book Description 1',
             'image_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg',
-            'file_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg'
+            'file_path'=> 'storage/pdf/book.pdf'
         ]);
         //1
         Book::Create([
             'name'=> 'Book Name 2',
             'description' =>'Book Description 2',
             'image_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg',
-            'file_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg'
-        ]);
+            'file_path'=> 'storage/pdf/book.pdf'                ]);
         //1
         Book::Create([
             'name'=> 'Book Name 3',
             'description' =>'Book Description 3',
             'image_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg',
-            'file_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg'
-        ]);
+            'file_path'=> 'storage/pdf/book.pdf'                ]);
         //1
         Book::Create([
             'name'=> 'Book Name 4',
             'description' =>'Book Description 4',
             'image_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg',
-            'file_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg'
-        ]);
+            'file_path'=> 'storage/pdf/book.pdf'                ]);
         Book::Create([
             'name'=> 'Book Name 5',
             'description' =>'Book Description 5',
             'image_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg',
-            'file_path'=> 'https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg'
-        ]);
+            'file_path'=> 'storage/pdf/book.pdf'                ]);
         
 
         
