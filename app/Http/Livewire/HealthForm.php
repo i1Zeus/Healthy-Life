@@ -21,6 +21,7 @@ class HealthForm extends Component
             $this->bmr=$this->bmr * 1.725;
           } else {
             // throw an error or return a default value
+            return;
           }
         $this->bmr = intval($this->bmr);
         $this->hight = null;
