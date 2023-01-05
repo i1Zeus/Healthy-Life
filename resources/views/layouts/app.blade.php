@@ -31,7 +31,7 @@
     <x-jet-banner />
 
     <div class="">
-        @livewire('ui.navbar')
+        <!-- @livewire('ui.navbar') -->
 
         <!-- Page Content -->
         <main>
