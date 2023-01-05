@@ -30,10 +30,11 @@ class HealthForm extends Component
         $this->gender = null;
         $this->activityLevel = null;
     }
-
+    
     public function render()
     {
-        return view('livewire.health-form',[
-            'bmr' => $this->bmr ]);
+        return view('livewire.health-form', [
+            'bmr' => $this->bmr,
+        ]);
     }
 }

@@ -76,10 +76,13 @@
                             </div>
                         </div>
                     </div>
-
-                    <span class="text-lg text-black">
-                        you'll need <span class="text-xl font-bold">{{ $bmr }}</span> calories to stay healthy!
-                    </span>
+                    @if ($bmr != null)
+                        <span class="text-lg text-black">
+                            you'll need <span class="text-xl font-bold">{{ $bmr }}</span> calories druing your
+                            day to stay
+                            healthy!
+                        </span>
+                    @endif
                 </div>
             </div>
         </div>
@@ -105,9 +108,11 @@
             <div class="px-6 py-6 lg:px-8">
                 <h3 class="mb-4 text-xl font-medium text-gray-900 ">Healthy Life</h3>
                 <div>
-                    <span class="text-lg text-black">
-                        you'll need {{ $bmr }} calories to stay healthy!
-                    </span>
+                    @if ($bmr != null)
+                        <span class="text-lg text-black">
+                            you'll need {{ $bmr }} calories to stay healthy!
+                        </span>
+                    @endif
                 </div>
             </div>
         </div>
