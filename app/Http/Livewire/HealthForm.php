@@ -6,6 +6,8 @@ class HealthForm extends Component
 {
     public $hight , $weight , $age ,$gender  ,$activityLevel , $bmr;
     public function harrisbenedict() {
+      if($this->weight >=10 && $this->hight >=10 && $this->age >=15){
+
         if ($this->gender == '1') 
             $this->bmr = 66 + (6.2 * $this->weight) + (12.7 * $this->hight) - (6.76 * $this->age);
         elseif($this->gender == '2')
@@ -22,7 +24,11 @@ class HealthForm extends Component
           } else if ($this->activityLevel == '4') {
             $this->bmr=$this->bmr * 1.725;
           }
-        return $this->bmr = intval($this->bmr);
+          else {
+            $this->bmr = $this->bmr;
+          }
+        }
+        $this->bmr = intval($this->bmr);
         $this->hight = null;
         $this->weight = null;
         $this->age = null;
@@ -35,8 +41,8 @@ class HealthForm extends Component
     public function render()
     {
       //get bmr  value
-        $bmr = value($this->harrisbenedict());
+        // $bmr = value($this->harrisbenedict());
         //  dd($bmr);
-        return view('livewire.health-form',['bmr'=>$bmr]);
+        return view('livewire.health-form',['bmr'=>$this->bmr]);
     }
 }
