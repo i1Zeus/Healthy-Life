@@ -123,10 +123,3 @@
         </div>
     </div>
 </div> --}}
-
-
-{{-- <style scoped>
-    #font {
-        font-size: 120%;
-    }
-</style> --}}
