@@ -2,8 +2,10 @@
 
 namespace App\Http\Livewire;
 use Livewire\Component;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
+
 class HealthForm extends Component
-{
+{   use LivewireAlert;
     public $hight , $weight , $age ,$gender  ,$activityLevel , $bmr;
     public function harrisbenedict() {
       if($this->weight >=10 && $this->hight >=10 && $this->age >=15){
@@ -34,7 +36,19 @@ class HealthForm extends Component
         $this->age = null;
         $this->gender = null;
         $this->activityLevel = null;
-        // dd($this->bmr);
+        $this->alert('info', ' you ll need   ' .$this->bmr . '   calories druing your day to stay healthy!', [
+          'position' => 'center',
+          'timer' => '8000',
+          'toast' => true,
+          'timerProgressBar' => false,
+          'showConfirmButton' => false,
+          'onConfirmed' => '',
+          'showDenyButton' => false,
+          'onDenied' => '',
+          'showCancelButton' => true,
+          'onDismissed' => '',
+          'cancelButtonText' => 'OK',
+         ]);
     }
 
     
