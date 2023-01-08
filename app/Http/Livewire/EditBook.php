@@ -19,7 +19,7 @@ class EditBook extends Component
     ];
 
     public function mount($book_id)
-    {   
+    {
         $this->book_id = $book_id;
         if ($book_id) {
             $book = Book::findOrFail($book_id);
@@ -32,16 +32,16 @@ class EditBook extends Component
     public function edit()
     {
         $this->validate();
-        
+
         $data = [
             'name' => $this->name,
             'description' => $this->description,
         ];
-        
+
         $book = Book::findOrFail($this->book_id);
         $book->edit($data);
-        if ($this->new_file){
-            $book->update_file($this->new_file); 
+        if ($this->new_file) {
+            $book->update_file($this->new_file);
         }
         if ($this->new_image) {
             $book->update_image($this->new_image);

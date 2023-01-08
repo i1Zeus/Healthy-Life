@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     use HasFactory;
-    protected $fillable = [ 'name' , 'description' ,'image_path','file_path'];
+    protected $fillable = ['name', 'description', 'image_path', 'file_path'];
     ### add ###
     public function add($data)
     {
@@ -22,7 +22,7 @@ class Book extends Model
         $this->update($data);
     }
     ### End edit ###
-    
+
     //add_image
     public function add_image($image)
     {
