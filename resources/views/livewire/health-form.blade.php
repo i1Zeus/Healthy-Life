@@ -81,13 +81,13 @@
                             </div>
                         </div>
                     </div>
-                    <!-- @if ($bmr != null)
+                    {{-- @if ($bmr != null)
                         <span class="text-lg text-black">
                             you'll need <span class="text-xl font-bold">{{ $bmr }}</span> calories druing your
                             day to stay
                             healthy!
                         </span>
-                    @endif -->
+                    @endif  --}}
                 </div>
             </div>
         </div>
