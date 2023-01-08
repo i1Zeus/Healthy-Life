@@ -35,7 +35,7 @@
                                     <i class="fa-regular fa-image"></i>
                                     <input wire:model.lazy="new_image" type="file" class="hidden" id="img">
                                 </label>
-                                {{-- ? Image --}}
+                                {{-- ? file --}}
                                 <label for="file" class="cursor-pointer duration-150 hover:text-[#16a085]">
                                     <i class="fa-solid fa-paperclip"></i>
                                     <input wire:model.lazy="new_file" type="file" class="hidden" id="file">

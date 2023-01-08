@@ -5,6 +5,7 @@ use App\Http\Livewire\AddBook;
 use App\Http\Livewire\EditBook;
 use App\Http\Livewire\BookShow;
 use App\Http\Livewire\HealthForm;
+use App\Http\Livewire\Pages\Diet;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::get('/add-book', AddBook::class)->name('add-book');
 Route::get('/edit-book/{book_id}', EditBook::class)->name('edit-book');
 Route::get('/book-show', BookShow::class)->name('book-show');
 Route::get('/healthy-meals', HealthForm::class)->name('healthy-meals');
+Route::get('/diet', Diet::class)->name('diet');
 
 Route::middleware([
     'auth:sanctum',

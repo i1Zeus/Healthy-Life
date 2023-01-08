@@ -65,7 +65,7 @@
                             and reduce your risk of chronic diseases such as obesity, type 2 diabetes, and heart
                             disease.
                         </p>
-                        <a href="#" class="btn">
+                        <a href="{{ route('diet') }}" class="btn">
                             learn more <span class="fas fa-chevron-right"></span>
                         </a>
                     </div>

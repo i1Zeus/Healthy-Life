@@ -8,13 +8,13 @@ use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\WithPagination;
 
 class BookShow extends Component
-{   
-    
+{
+
     use LivewireAlert;
     use WithPagination;
 
-    protected $listeners = [ '$refresh','delete','search'];
-    public $book_id, $search ;
+    protected $listeners = ['$refresh', 'delete', 'search'];
+    public $book_id, $search;
 
     public function delete()
     {
@@ -54,10 +54,11 @@ class BookShow extends Component
         $this->search = $search;
     }
     public function render()
-    {   $search = '%' . $this->search . '%';
+    {
+        $search = '%' . $this->search . '%';
         $books = Book::where('name', 'LIKE', $search)
-        ->orderBy('id', 'DESC');
-         $books = $books->paginate(5);
-        return view('livewire.book-show' , compact('books'));
+            ->orderBy('id', 'DESC');
+        $books = $books->paginate(5);
+        return view('livewire.book-show', compact('books'));
     }
 }
