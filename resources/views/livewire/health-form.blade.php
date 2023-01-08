@@ -1,4 +1,3 @@
-{{-- Sajad --}}
 <div class="flex flex-col justify-center min-h-screen py-6 mr-[180px] bg-white sm:py-12">
     <div class="relative py-3 sm:max-w-xl sm:mx-auto">
         <div
@@ -12,7 +11,6 @@
                 <div class="divide-y divide-gray-200">
                     <div class="py-8 space-y-4 text-base leading-6 text-gray-700 sm:text-lg sm:leading-7">
                         <div id="font" class="mt-[15%] ml-[30%] xl:ml-[20%]">
-                            {{--! we need to make it as form --}}
                             <div name="calmeter" required>
                                 <div class="w-[60%] xl:w-[80%]">
                                     <div class="z-0 flex w-full gap-5 mb-6 group">
@@ -82,13 +80,6 @@
                             </div>
                         </div>
                     </div>
-                    {{-- @if ($bmr != null)
-                        <span class="text-lg text-black">
-                            you'll need <span class="text-xl font-bold">{{ $bmr }}</span> calories druing your
-                            day to stay
-                            healthy!
-                        </span>
-                    @endif  --}}
                 </div>
             </div>
         </div>

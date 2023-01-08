@@ -28,7 +28,7 @@
                         </p>
                         <div class="flex gap-2 flex-cols-2">
                             <button wire:click="download({{ $book->id }})" value="{{ $book->file_path }}"
-                             class="btn ">
+                                class="btn ">
                                 Download
                                 <!-- <i class="text-gray-600 fa-solid fa-trash hover:text-red-700 "></i> -->
                             </button>
