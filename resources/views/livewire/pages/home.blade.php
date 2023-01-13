@@ -87,7 +87,7 @@
                             muscle strength, and flexibility. It is important to use proper form and technique to avoid
                             injury and get benefit from your workouts.
                         </p>
-                        <a href="#" class="btn">
+                        <a href="{{ route('sport')}}" class="btn">
                             learn more <span class="fas fa-chevron-right"></span>
                         </a>
                     </div>
