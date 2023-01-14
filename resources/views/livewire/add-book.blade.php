@@ -22,7 +22,7 @@
                                     Name</label>
                             </div>
                             <div class="relative">
-                                <textarea wire:model.lazy="description" id="description" name="description" type="description"
+                                <textarea wire:model.lazy="description" rows="4" id="description" name="description" type="description"
                                     class="w-full h-40 text-gray-900 placeholder-transparent border-0 border-b-2 border-gray-300 focus:outline-none focus:ring-0 focus:ring-transparent focus:border-[#16a085] peer"
                                     placeholder="Description" />
                                 </textarea>
