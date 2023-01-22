@@ -31,7 +31,7 @@ Route::get('/book-show', BookShow::class)->name('book-show');
 Route::get('/healthy-meals', HealthForm::class)->name('healthy-meals');
 Route::get('/healthy', Healthy::class)->name('healthy');
 Route::get('/diet', Diet::class)->name('diet');
-Route::get('/sportmachines', Sport::class)->name('sport');
+Route::get('/sportMachines', Sport::class)->name('sport');
 
 Route::middleware([
     'auth:sanctum',
