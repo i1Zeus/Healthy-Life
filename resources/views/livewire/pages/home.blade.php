@@ -11,7 +11,7 @@
                     You have to go through life, hopefully trying to stay healthy, being
                     as happy as you can, and pursuing, you know, doing what you want
                 </p>
-                <a href="#" class="btn">
+                <a href="{{ route('healthy') }}" class="btn">
                     read more <span class="fas fa-chevron-right"></span>
                 </a>
             </div>
@@ -87,7 +87,7 @@
                             muscle strength, and flexibility. It is important to use proper form and technique to avoid
                             injury and get benefit from your workouts.
                         </p>
-                        <a href="{{ route('sport')}}" class="btn">
+                        <a href="{{ route('sport') }}" class="btn">
                             learn more <span class="fas fa-chevron-right"></span>
                         </a>
                     </div>
