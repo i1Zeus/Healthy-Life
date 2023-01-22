@@ -29,7 +29,7 @@ Route::get('/add-book', AddBook::class)->name('add-book');
 Route::get('/edit-book/{book_id}', EditBook::class)->name('edit-book');
 Route::get('/book-show', BookShow::class)->name('book-show');
 Route::get('/healthy-meals', HealthForm::class)->name('healthy-meals');
-Route::get('/healthy', Healyht::class)->name('healthy');
+Route::get('/healthy', Healthy::class)->name('healthy');
 Route::get('/diet', Diet::class)->name('diet');
 Route::get('/sportmachines', Sport::class)->name('sport');
 
