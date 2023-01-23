@@ -357,6 +357,8 @@ section {
     color: var(--black);
     font-size: 1.5rem;
     margin-bottom: 3rem;
+    padding: 0rem 9%;
+    text-align: center;
 }
 
 .features-list {
@@ -375,24 +377,24 @@ section {
     flex: 1rem;
 }
 
-.feature .meats h2 {
+.feature .lists h2 {
     color: var(--green);
     font-size: 3rem;
     margin-bottom: 2rem;
 }
 
 
-.feature .meats .meat {
+.feature .lists .list {
     padding-left: 2rem;
     padding-bottom: 2rem;
 }
 
-.feature .meats .meat h4 {
+.feature .lists .list h4 {
     color: var(--black);
     font-size: 2rem;
     margin-bottom: .5rem;
 }
-.feature .meats .meat p {
+.feature .lists .list p {
     color: var(--black);
     font-size: 1.4rem;
     line-height: 2;
